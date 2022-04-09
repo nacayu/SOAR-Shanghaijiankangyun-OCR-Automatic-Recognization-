@@ -3,7 +3,8 @@
 ## Functions and Performence
 - Functions:
 1. We utilize the paddleocr lib to automaticlly recognize the picture and transform these pictures into excel which shows the individuals and their corresponding infomation(e.g. test_time, result)
-2. Performence:
+2. You can change our code for your destination.
+- Performence:
 After testing, it can achieve 30 frames per second.
 
 ## Result show
