@@ -8,7 +8,7 @@ After testing, it can achieve 30 frames per second.
 
 ## Result show
 
-<img src="./result.jpg#pic_center" width="300" height="400"></img>
+<img src="https://github.com/nacayu/Shanghaijiankangyun_OCR_Automatic_Recognization/blob/main/result.jpg#pic_center" width="300" height="400"></img>
 
 
 ## our enviroment:
