@@ -5,6 +5,7 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 from PIL import Image
 import pandas as pd
 import numpy as np
+import re
 
 need_search = ('姓名','证件号码','在沪地址','联系方式','采样时间','检测结果')
 
@@ -57,9 +58,11 @@ def main():
                     j+=1
                 elif x[2] == '采样时间':
                     person_result[1] = name_info[i+1][2]
+                    mat = re.search(r'\d{4}-\d{1,2}-\d{2}', person_result[1])
+                    person_result[1] = mat.group()
                     j+=1
                 elif x[2] == '检测结果':
-                    person_result[2] = name_info[i+1][2]
+                    person_result[2] = name_info[i+1][2][:7]
                     j+=1
                 if j == 3:
                     print(person_result)
@@ -75,7 +78,7 @@ def main():
     print(df)
     if not os.path.exists(args.out_path):
         os.mkdir(args.out_path)
-    df.to_excel(os.path.join(args.out_path, 'temp.xlsx'))
+    df.to_excel(os.path.join(args.out_path, 'output.xlsx'))
 
 
 
