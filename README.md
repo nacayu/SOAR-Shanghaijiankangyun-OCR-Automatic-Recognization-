@@ -9,7 +9,7 @@ After testing, it can achieve 30 frames per second.
 
 ## Result show
 
-<img src="https://github.com/nacayu/Shanghaijiankangyun_OCR_Automatic_Recognization/blob/main/result.jpg#pic_center" width="300" height="400"></img>
+<img src="https://github.com/nacayu/Shanghaijiankangyun_OCR_Automatic_Recognization/blob/main/result.jpg#pic_center" width="300" height="350"></img>
 
 
 ## our enviroment:
@@ -17,5 +17,17 @@ After testing, it can achieve 30 frames per second.
 1. paddlepaddle:paddlepaddle 2.2.2 cpu version
 2. paddleocr 2.4.0.4
 
-We install the enviroment by following page:
+## Installation
+We install the enviroment(paddlepaddle and paddleocr) by following page:
 https://github.com/PaddlePaddle/PaddleOCR
+
+## Use
+
+````# 
+
+#(we have already set up default path)
+$cd path/to/Shanghaijiankangyun_OCR_Automatic_Recognization
+$python ./main.py --output_path your path --input_path your path
+
+
+````
